@@ -1,0 +1,19 @@
+{
+  "name": "Popmotion Test",
+  "version": "0.0.0",
+  "authors": [
+    "Jose Marmolejos <marmolejos.jose@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "popmotion": "~3.4.1",
+    "typesettings": "~3.0.1"
+  }
+}

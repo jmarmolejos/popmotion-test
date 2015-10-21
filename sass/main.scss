@@ -1,0 +1,21 @@
+$font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-serif: Georgia, 'Times New Roman', serif;
+$font-mono: 'Lucida Console', Monaco, monospace;
+$text-color: #000;
+$base-vertical-unit: 6px;
+$base-line-multi: 4;
+$base-font-size: 16px;
+$ms-ratio: 1.414;
+$paragraph-indent: true;
+$paragraph-justify: true;
+$load-typesetted: true;
+$background-color: #FFF942;
+
+$demo-container-height: 150px;
+$demo-container-height-adjust: -($demo-container-height/2);
+$demo-container-width: 650px;
+$demo-container-width-adjust: -($demo-container-width/2);
+
+
+@import "../bower_components/typesettings/_typesettings.scss";
+@import "styles.scss";
