@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.html",
   "dependencies": {
+    "browserify": "^11.2.0",
+    "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4",
-    "gulp": "^3.9.0"
+    "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
