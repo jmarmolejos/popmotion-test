@@ -17,5 +17,5 @@ $demo-container-width: 650px;
 $demo-container-width-adjust: -($demo-container-width/2);
 
 
-@import "../bower_components/typesettings/_typesettings.scss";
+@import "./bower_components/typesettings/_typesettings.scss";
 @import "styles.scss";

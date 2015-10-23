@@ -5,13 +5,13 @@ var browserify = require('browserify')
 
 gulp.task('sass', function () {
 // gulp.src('./sass/**/*.scss')
-  gulp.src('./sass/main.scss')
+  gulp.src('./src/sass/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./build'));
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('./src/sass/**/*.scss', ['sass']);
 });
 
 gulp.task('browserify', function() {
