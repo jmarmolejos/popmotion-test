@@ -179,3 +179,9 @@ h1, h2 {
   width: 650px;
   margin-top: -75px;
   margin-left: -325px; }
+
+path {
+  fill: none;
+  stroke-width: 5;
+  stroke-opacity: .5;
+  stroke: #000000; }

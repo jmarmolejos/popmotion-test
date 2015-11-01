@@ -1,5 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var Message = require('./message')
+var CircleChart = require('./circle')
 
 var messages = [
   {
@@ -30,9 +31,35 @@ var loop = function() {
   setTimeout(loop, 2500)
 }
 
-loop();
+//loop();
 
-},{"./message":2}],2:[function(require,module,exports){
+var circleChart = new CircleChart();
+circleChart.drawChart();
+
+},{"./circle":2,"./message":3}],2:[function(require,module,exports){
+var CircleChart = function(settings) {
+  this.circleActor = new ui.Actor({
+    element: "#circle-path",
+    values: {
+      length:0
+    }
+  });
+};
+
+CircleChart.prototype.drawChart = function() {
+  var drawLine = new ui.Tween({
+    duration: 2000,
+    values: {
+      length: 100
+    }
+  });
+  console.log("about to start.");
+  this.circleActor.start(drawLine);
+}
+
+module.exports = CircleChart;
+
+},{}],3:[function(require,module,exports){
 var Message = function (settings) {
 
   var initialValues = {

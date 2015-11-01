@@ -1,4 +1,5 @@
 var Message = require('./message')
+var CircleChart = require('./circle')
 
 var messages = [
   {
@@ -29,4 +30,7 @@ var loop = function() {
   setTimeout(loop, 2500)
 }
 
-loop();
+//loop();
+
+var circleChart = new CircleChart();
+circleChart.drawChart();
