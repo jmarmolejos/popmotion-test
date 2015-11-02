@@ -34,7 +34,7 @@ var loop = function() {
 //loop();
 
 var circleChart = new CircleChart();
-circleChart.drawChart();
+circleChart.drawChart(75);
 
 },{"./circle":2,"./message":3}],2:[function(require,module,exports){
 var CircleChart = function(settings) {
@@ -46,14 +46,14 @@ var CircleChart = function(settings) {
   });
 };
 
-CircleChart.prototype.drawChart = function() {
+CircleChart.prototype.drawChart = function(complete) {
   var drawLine = new ui.Tween({
-    duration: 2000,
+    duration: 600,
     values: {
-      length: 100
+      length: complete
     }
   });
-  console.log("about to start.");
+  
   this.circleActor.start(drawLine);
 }
 

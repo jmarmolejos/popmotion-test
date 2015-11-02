@@ -33,4 +33,4 @@ var loop = function() {
 //loop();
 
 var circleChart = new CircleChart();
-circleChart.drawChart();
+circleChart.drawChart(75);

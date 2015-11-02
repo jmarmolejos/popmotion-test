@@ -7,14 +7,14 @@ var CircleChart = function(settings) {
   });
 };
 
-CircleChart.prototype.drawChart = function() {
+CircleChart.prototype.drawChart = function(complete) {
   var drawLine = new ui.Tween({
-    duration: 2000,
+    duration: 600,
     values: {
-      length: 100
+      length: complete
     }
   });
-  console.log("about to start.");
+  
   this.circleActor.start(drawLine);
 }
 
