@@ -22,6 +22,10 @@ gulp.task('browserify', function() {
     .pipe(gulp.dest('./build/'));
 });
 
+gulp.task('browserify:watch', function () {
+  gulp.watch('./src/js/**/*.js', ['browserify'])
+})
+
 gulp.task('default', function() {
   // place code for your default task here
 });

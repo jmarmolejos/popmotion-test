@@ -14,7 +14,6 @@ CircleChart.prototype.drawChart = function(complete) {
       length: complete
     }
   });
-  
   this.circleActor.start(drawLine);
 }
 
