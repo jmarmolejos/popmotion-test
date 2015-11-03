@@ -179,6 +179,9 @@ h1, h2 {
   width: 650px;
   margin-top: -75px;
   margin-left: -325px; }
+  .demo-container.circle-chart-container {
+    width: 110px;
+    margin-left: -55px; }
 
 path {
   fill: none;
@@ -186,5 +189,10 @@ path {
   stroke-opacity: 1;
   stroke: #000000; }
 
-.chart-label {
-  position: absolute; }
+.chart-label-container {
+  text-align: center;
+  width: 110px; }
+
+svg {
+  width: 110px;
+  height: 110px; }

@@ -16,6 +16,8 @@ $demo-container-height-adjust: -($demo-container-height/2);
 $demo-container-width: 650px;
 $demo-container-width-adjust: -($demo-container-width/2);
 
+$circle-chart-width: 110px;
+$circle-chart-height: 110px;
 
 @import "./bower_components/typesettings/_typesettings.scss";
 @import "styles.scss";

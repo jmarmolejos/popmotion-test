@@ -7,6 +7,12 @@ h1,h2 {
 }
 
 .demo-container {
+
+  &.circle-chart-container {
+    width: $circle-chart-width;
+    margin-left: -$circle-chart-width/2;
+  }
+
   position: absolute;
   top:50%;
   left:50%;
@@ -23,6 +29,12 @@ path {
     stroke:#000000;
 }
 
-.chart-label {
-  position:absolute;
+.chart-label-container {
+  text-align: center;
+  width: $circle-chart-width;
+}
+
+svg {
+  width: $circle-chart-width;
+  height: $circle-chart-height;
 }
