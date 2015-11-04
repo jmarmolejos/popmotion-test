@@ -2,39 +2,43 @@
 var Message = require('./message')
 var CircleChart = require('./circle')
 
-var messages = [
-  {
-    title: "Lorem ipsum dolor",
-    subTitle: "Vestibulum non dui ac augue"
-  },
-  {
-    title: "Integer iaculis",
-    subTitle: "Luctus justo sit amet porttitor"
-  },
-  {
-    title: "Tristique volutpat",
-    subTitle: "Mauris aliquet sit viverra"
+if (window.location.href.indexOf("index.html") !== -1) {
+  var messages = [
+    {
+      title: "Lorem ipsum dolor",
+      subTitle: "Vestibulum non dui ac augue"
+    },
+    {
+      title: "Integer iaculis",
+      subTitle: "Luctus justo sit amet porttitor"
+    },
+    {
+      title: "Tristique volutpat",
+      subTitle: "Mauris aliquet sit viverra"
+    }
+  ];
+
+  var counter = 0
+
+  var loop = function() {
+    var message = new Message(messages[counter]);
+    message.show();
+
+    counter++;
+
+    if(counter >= messages.length)
+      counter = 0;
+
+    setTimeout(loop, 2500)
   }
-];
 
-var counter = 0
+  loop();
+};
 
-var loop = function() {
-  var message = new Message(messages[counter]);
-  message.show();
-
-  counter++;
-
-  if(counter >= messages.length)
-    counter = 0;
-
-  setTimeout(loop, 2500)
+if (window.location.href.indexOf("circle_chart.html") !== -1) {
+  var circleChart = new CircleChart();
+  circleChart.drawChart(75);
 }
-
-//loop();
-
-var circleChart = new CircleChart();
-circleChart.drawChart(75);
 
 },{"./circle":2,"./message":3}],2:[function(require,module,exports){
 var CircleChart = function(settings) {
