@@ -19,5 +19,7 @@ $demo-container-width-adjust: -($demo-container-width/2);
 $circle-chart-width: 110px;
 $circle-chart-height: 110px;
 
+$chart-label-color: #FFFFFF;
+
 @import "./bower_components/typesettings/_typesettings.scss";
 @import "styles.scss";

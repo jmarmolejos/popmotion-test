@@ -26,15 +26,35 @@ path {
     fill: none;
     stroke-width: 10;
     stroke-opacity: 1;
-    stroke:#000000;
+    stroke:#1676e3;
+
+    &#shadow-path {
+      stroke: #bbbbbb
+    }
+
+    &#inner-path {
+      fill: #1a1a1a;
+      stroke: none
+    }
 }
 
 .chart-label-container {
   text-align: center;
   width: $circle-chart-width;
+  position: absolute;
+  top:50%;
+  margin-top: -1em
+}
+
+.circle-chart {
+  position:relative;
 }
 
 svg {
   width: $circle-chart-width;
   height: $circle-chart-height;
+}
+
+.chart-label {
+  color: $chart-label-color
 }
